@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Online Voting System</h1>
+            <nav>
+                <a href="login.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="profile">
+            <img src="./images/images.jpeg" alt="Profile Image">
+            <p><strong>Name:</strong> Ajay </p>
+            <p><strong>Mobile:</strong> 9807806801</p>
+            <p><strong>State:</strong> Karnataka</p>
+            <p><strong>City:</strong> Bengaluru</p>
+            <p><strong>Aadhaar:</strong> 1234 5678 9012</p>
+            <p><strong>Status:</strong> <span id="status">Not Voted</span></p>
+        </div>
+        <div class="voting">
+            <h2>Vote for Your Party</h2>
+            <div class="party">
+                <div class="party-item">
+                    <img src="./images/BJP-symbol.jpeg" alt="BJP">
+                    <p>Bharatiya Janata Party (BJP)</p>
+                    <button onclick="vote('BJP')">Vote</button>
+                </div>
+                <div class="party-item">
+                    <img src="./images/congresscm.jpeg" alt="Congress">
+                    <p>Congress</p>
+                    <button onclick="vote('Congress')">Vote</button>
+                </div>
+                <div class="party-item">
+                    <img src="./images/jdsfemale.jpeg" alt="JDU">
+                    <p>Janata Dala Secular (JDS)</p>
+                    <button onclick="vote('JDS')">Vote</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Voting System. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
